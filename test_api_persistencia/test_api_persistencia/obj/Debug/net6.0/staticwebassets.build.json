@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ataPf0fVJQTPxKMObZIjIdOxYlY3zKyECtShTPE6WRs=",
+  "Source": "test_api_persistencia",
+  "BasePath": "_content/test_api_persistencia",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

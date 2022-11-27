@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "y4Ked1RkNkmWsGrnnt3kUtqmpULUu20SkJQox+jRN7B2m7QyG4cwqRsNN8k5L4UvGGvaBij1Je2qpVJfTs7LLQ==",
+  "success": true,
+  "projectFilePath": "D:\\NetCore\\TestApp\\test_app_mvc_web\\test_app_mvc_web\\test_app_mvc_web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Decalink\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
