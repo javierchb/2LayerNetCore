@@ -5,7 +5,7 @@ using test_app_mvc_web.Delegates;
 namespace test_app_mvc_web.Controllers
 {
     [Route("[controller]")]
-    [ApiController]    
+    [ApiController]
     public class UserController : Controller
     {
         private readonly DelegateUser _DelegateUser;
@@ -13,7 +13,8 @@ namespace test_app_mvc_web.Controllers
         {
             _DelegateUser = new DelegateUser(Configuration);
         }
-        [HttpGet("UserIndex")]
+        [Route("UserIndex")]
+        [HttpGet]
         public async Task<IActionResult> UserIndex()
         {
             List<User> ListUsers = await _DelegateUser.GetUsers();

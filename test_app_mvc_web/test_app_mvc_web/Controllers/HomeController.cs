@@ -15,8 +15,7 @@ namespace test_app_mvc_web.Controllers
         }
 
         public async Task<IActionResult> Index()
-        {
-            await _DelegateUser.GetUsers();
+        {            
             return View();
         }
 

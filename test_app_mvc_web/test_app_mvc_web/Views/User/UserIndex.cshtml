@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "User Index";
+}
+@model test_app_mvc_web.Models.UI.UIUser
+
+<div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        <h2> Listado usuarios</h2>
+        <div class="row">
+            <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+                <ul class="list-group">
+                    @foreach (var item in Model.ListUsers)
+                    {
+                        <li class="list-group-item">@(string.Format("{0} {1} {2}", item.Names, item.Lastname1, item.Lastname2))</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
