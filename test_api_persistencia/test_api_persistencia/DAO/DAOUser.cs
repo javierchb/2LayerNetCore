@@ -18,14 +18,14 @@ namespace test_api_persistencia.DAO
             using (var connection = _Connection.GetConnection)
             {
                 string Query = "SELECT " +
-                    "cod_user Code," +
+                    "user_code Code," +
                     "user_names Names," +
-                    "user_lastname1 Lastname1," +
-                    "user_lastname2 Lastname2," +
+                    "user_last_name_1 Lastname1," +
+                    "user_last_name_2 Lastname2," +
                     "user_username Username," +
                     "user_email Email," +
                     "user_phone Phone " +
-                    "FROM tg_user";
+                    "FROM tg_usuario";
                 var ResultQuery = connection.Query<User>(Query, commandType: CommandType.Text);
                 connection.Close();
                 Response = ResultQuery.ToList();
