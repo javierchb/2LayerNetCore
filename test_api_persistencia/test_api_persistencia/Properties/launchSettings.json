@@ -11,8 +11,8 @@
   "profiles": {
     "test_api_persistencia": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
+      "dotnetRunMessages": false,
+      "launchBrowser": false,
       "launchUrl": "swagger",
       "applicationUrl": "http://localhost:5082",
       "environmentVariables": {

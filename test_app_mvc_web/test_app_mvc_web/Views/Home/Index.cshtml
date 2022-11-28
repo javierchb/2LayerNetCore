@@ -1,8 +1,39 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "System user login";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row justify-content-center my-1">
+    <div class="col-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="card">
+            <div class="card-header">
+                Sign In
+            </div>
+            <div class="card-body">
+                <form class="row" asp-controller="Login" asp-action="UserLogin" method="POST" id="FormLogIng" enctype="application/x-www-form-urlencoded">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <label for="UserName">Username</label>
+                        <input type="text" class="form-control" id="Username" name="Username"/>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control" id="Password" name="Password" />
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-success" onclick="SendLogIn();">Log In</button>
+            </div>
+        </div> 
+    </div> 
 </div>
+@section Scripts {
+    <script>
+        const SendLogIn = () => {
+            let username = document.getElementById("Username").value;
+            let password = document.getElementById("Password").value;
+            console.log(username);
+            console.log(password);
+            document.getElementById("FormLogIng").submit();
+        }
+    </script>
+    
+}

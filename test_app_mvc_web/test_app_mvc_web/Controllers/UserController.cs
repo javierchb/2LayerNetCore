@@ -4,8 +4,6 @@ using test_app_mvc_web.Models.UI;
 using test_app_mvc_web.Delegates;
 namespace test_app_mvc_web.Controllers
 {
-    [Route("[controller]")]
-    [ApiController]
     public class UserController : Controller
     {
         private readonly DelegateUser _DelegateUser;
